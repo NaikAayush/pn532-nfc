@@ -32,8 +32,10 @@ while True:
     if uid is None:
         continue
     print("Found card with UID:", [hex(i) for i in uid])
+    print("Raw data:", [i for i in uid])
+    print("Raw data: UID", uid)
     buzzer.on()
-    time.sleep(1)
+    time.sleep(0.5)
     buzzer.off()
     time.sleep(2)
 
