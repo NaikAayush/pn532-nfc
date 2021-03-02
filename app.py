@@ -4,6 +4,8 @@ from digitalio import DigitalInOut
 from gpiozero import Buzzer
 from time import sleep
 
+buzzer = Buzzer(17)
+
 from adafruit_pn532.i2c import PN532_I2C
 # from adafruit_pn532.spi import PN532_SPI
 # from adafruit_pn532.uart import PN532_UART
@@ -32,3 +34,4 @@ while True:
     print("Found card with UID:", [hex(i) for i in uid])
     buzzer.beep()
     time.sleep(2)
+
