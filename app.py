@@ -32,6 +32,8 @@ while True:
     if uid is None:
         continue
     print("Found card with UID:", [hex(i) for i in uid])
-    buzzer.beep()
+    buzzer.on()
+    time.sleep(1)
+    buzzer.off()
     time.sleep(2)
 
