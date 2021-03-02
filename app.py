@@ -2,7 +2,7 @@ import board
 import busio
 from digitalio import DigitalInOut
 from gpiozero import Buzzer
-from time import sleep
+from time
 
 buzzer = Buzzer(17)
 
